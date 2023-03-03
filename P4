@@ -14,5 +14,5 @@ int main(void){
     mes=(es/total)*100;
     moutros=(outros/total)*100;
 
-    printf("O rendimento mensal de uma distribuidora foi de %f, A participação em porcentagem de cada estado foi de:\n",total);
-    printf("SP %.2f por cento\nRJ %.2f por cento\nMG %.2f por cento\nES %.2f por cento\nO restante dos estados foi de %.2f por cento.",msp,mrj,mmg,mes,moutros);}
+    printf("O rendimento mensal de uma distribuidora foi de %f, A participação em porcentagem de cada estado foi de:",total);
+    printf("\nSP %.2f por cento\nRJ %.2f por cento\nMG %.2f por cento\nES %.2f por cento\nO restante dos estados foi de %.2f por cento.",msp,mrj,mmg,mes,moutros);}
