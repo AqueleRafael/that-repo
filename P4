@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(void){
+    setlocale(LC_ALL, "Portuguese");
+    float sp=67836.43,rj=36678.66,mg=29229.88,es=27165.48,outros=19849.53,total;
+    float msp=0,mrj=0,mmg=0,mes=0,moutros;
+
+    total=sp+rj+mg+es+outros;
+
+    msp=(sp/total)*100;
+    mrj=(rj/total)*100;
+    mmg=(mg/total)*100;
+    mes=(es/total)*100;
+    moutros=(outros/total)*100;
+
+    printf("O rendimento mensal de uma distribuidora foi de %f, A participação em porcentagem de cada estado foi de:\n",total);
+    printf("SP %.2f por cento\nRJ %.2f por cento\nMG %.2f por cento\nES %.2f por cento\nO restante dos estados foi de %.2f por cento.",msp,mrj,mmg,mes,moutros);}
