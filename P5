@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main(void){
+char pal[20],pall[20];
+int contador=0,contadorm=0,tam=0;
+printf("Digite uma palavra:\n");
+scanf("%s",&pal);
+tam=strlen(pal);
+contadorm=tam;
+for(contador=0;contador<=tam;contador++){
+        pall[contador]=pal[contador];
+        }
+for(contador=0;contador<=tam;contador++){
+        contadorm=contadorm-1;
+        pal[contador]=pall[contadorm];
+        }
+printf("A palavra invertida ficou: %s",pal);
+}
