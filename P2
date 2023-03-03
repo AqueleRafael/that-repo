@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void){
+    int aux=0,f1=1,f2=1,total=0,fibo[30],num=8,sim=55;
+
+    fibo[0]=0;fibo[1]=1;
+
+    for(aux=2;aux<=30;aux++){
+
+        total=f1+f2;
+        f2=f1;
+        f1=total;
+
+        fibo[aux]=total;}
+
+    printf("Digite um numero inteiro: 8");
+    //scanf("%d",&num);(Vai ser um numero predefinido)
+    for(aux=0;aux<=30;aux++){
+            if(num==fibo[aux]){
+            sim=1;}}
+    if(sim==1){
+        printf("\nO numero faz parte da sequencia de Fibonacci");}
+    else{
+        printf("\nO numero nao faz parte da sequencia de Fibonacci");}}
